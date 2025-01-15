@@ -42,7 +42,7 @@ header {
 
 /* استایل‌های عمومی لوگو */
 .logo {
-    height: 60px;
+    height: 70px;
     margin-left: 15px;
 }
 
@@ -67,8 +67,9 @@ header {
 /* تنظیم اندازه لوگو برای گوشی‌های کوچک‌تر */
 @media (max-width: 480px) {
     .logo {
-        height: 30px; /* تنظیم ارتفاع برای گوشی‌های کوچک‌تر */
-        margin-left: 0; /* تنظیم حاشیه برای گوشی‌های کوچک‌تر */
+        height: 76px; /* تنظیم ارتفاع برای گوشی‌های کوچک‌تر */
+        margin-left: 263; /* تنظیم حاشیه برای گوشی‌های کوچک‌تر */
+        margin-top: -63px;
     }
 }
 
@@ -449,7 +450,7 @@ nav {
     border: 0.3rem solid transparent;
     border-radius: 25px;
     background-color: transparent; /* پس‌زمینه شفاف */
-    border-color: #fff; /* رنگ حاشیه */
+    border-color: #9849d5; /* رنگ حاشیه */
 }
 
 .bn36 {
