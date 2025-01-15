@@ -1,13 +1,3 @@
-/* Dana font */
-
-@font-face {
-    font-family: "Dana" , Dana
-    src: url("../font/DanaVF.woff"); format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 /* styles.css */
 
 body {
@@ -73,9 +63,7 @@ header {
     }
 }
 
-.logo-container {
-    margin-bottom: 10px;
-}
+
 
 .logo:hover {
     transform: scale(1.1);
@@ -97,10 +85,10 @@ nav {
     position: static;
     order: 1;
     padding: 10px; /* تنظیم اندازه padding */
-    margin: 0 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 500px;
+    margin: 0 120px;
+    border-radius: 15px;
+    border: 1px solid #c9c9c938;
+    width: 700px;
 }
 
 /* کوچک‌تر کردن نوار جستجو برای گوشی‌های کوچک‌تر */
@@ -116,8 +104,6 @@ nav {
         padding: 5px; /* تنظیم اندازه padding */
         font-size: 16px; /* تنظیم اندازه فونت */
     }
-}
-
 }
 
 .menu {
@@ -146,14 +132,13 @@ nav {
 
 .cart-icon {
     position: absolute;
-    top: 38px;
+    top: 43px;
     left: 10px;
-    right: -3px;
+    right: auto; /* تنظیم به حالت پیش‌فرض */
     font-size: 24px;
-    margin-left: auto;
+    margin-left: 0; /* تنظیم حاشیه به صفر */
     padding-right: 5px; /* تنظیم اندازه padding */
-}
-
+  }
 /* استایل‌های عمومی تصویر سبد خرید */
 .cart-image {
     width: 30px;
@@ -202,8 +187,6 @@ nav {
     }
 }
 
-
-}
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);
@@ -324,13 +307,15 @@ nav {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+/* استایل برای input-field در حالت focus */
 .input-field:focus {
     border-color: #6200ea;
-    box-shadow: 0 0 10px rgba(98, 0,
-    .back-to-top {
+    box-shadow: 0 0 10px rgba(98, 0, 234, 0.2); /* رفع باگ در مقدار rgba */
+  }
+  
+  /* استایل برای دکمه back-to-top */
+  .back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
     background-color: #6200ea;
     color: #fff;
     padding: 10px 15px; /* تنظیم اندازه padding */
@@ -339,18 +324,16 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.3s;
     display: none;
-}
-
-    .back-to-top:hover {
-        background-color: #3700b3;
-        transform: scale(1.1);
-    }
-
-    .back-to-top.show {
-        display: block;
-    }
-    234, 0.2);
-}
+  }
+  
+  .back-to-top:hover {
+    background-color: #3700b3;
+    transform: scale(1.1);
+  }
+  
+  .back-to-top.show {
+    display: block;
+  }
 
 .card {
     background-color: #fff;
@@ -434,8 +417,8 @@ nav {
 
 .bn3637 {
     position: absolute;
-    top: 25px;
-    left: 75px;
+    top: 33px;
+    left: 76px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
